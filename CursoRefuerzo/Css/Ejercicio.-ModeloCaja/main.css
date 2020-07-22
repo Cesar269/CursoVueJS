@@ -1,0 +1,38 @@
+body{
+    background-color: antiquewhite;
+    border: unset;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid;
+    border-color: darkgray;
+    border-top: none;
+
+}
+.caja1{
+    background-color:white;
+    
+}
+.cabecera{
+    padding: 10px;
+    
+    border-bottom: gray solid 1px;
+}
+.contenido{
+    padding: 10px;
+    border-bottom: gray solid 1px;
+}
+.botones{
+    padding: 10px;
+
+}
+.aceptar{
+    background-color: rgb(17, 0, 255);
+    border-color: rgb(17, 0, 255);
+    border: unset;
+    color: white;
+}
+.cancelar{
+    background-color: rgba(146, 148, 145, 0.959);
+    border-color: rgba(146, 148, 145, 0.959);
+    border: unset;
+    color: white;
+}
