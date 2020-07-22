@@ -1,5 +1,5 @@
 body{
-    background-color: slategray;
+    background-color: greenyellow;
 }
 .caja{
     margin: 8px;
@@ -9,5 +9,8 @@ body{
     border-color: teal;
     border-width: 8px;
     border-left: 6px solid green;
-    
+    border-radius: 6px;
+    height: 100px;
+    width: 100px;
+    color: #cc492893;
 }
