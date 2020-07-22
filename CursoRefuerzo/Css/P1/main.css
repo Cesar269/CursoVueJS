@@ -1,0 +1,13 @@
+body{
+    background-color: slategray;
+}
+.caja{
+    margin: 8px;
+    padding: 8px; 
+    background-color: tan;
+    border-style: solid;
+    border-color: teal;
+    border-width: 8px;
+    border-left: 6px solid green;
+    
+}
