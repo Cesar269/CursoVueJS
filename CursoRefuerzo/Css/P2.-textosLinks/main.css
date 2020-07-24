@@ -1,0 +1,48 @@
+body{
+    background-color: #ffe4c4;
+}
+p{  
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: coral;
+    text-align: justify;
+    text-decoration: underline;
+    text-indent: 40px;
+    line-height: 1.7;
+    word-spacing: 2px;
+    text-shadow: 3px 2px 2px gray;
+}
+p:hover{
+    color: grey;
+}
+a{
+    background-color: plum;
+    margin: 15px;
+    padding: 4px;
+    border-radius: 5px;
+    border: solid 1px rgb(180, 95, 180);
+
+}
+a:link {
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 7px;
+    word-spacing: 2px;
+    color: hotpink;
+}/*Diseño para el link no visitado*/
+a:visited{
+    text-decoration: none;
+    text-transform: lowercase;
+    letter-spacing: 7px;
+    word-spacing: 2px;
+    color: blue;
+}
+a:hover{
+    text-decoration: line-through;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    word-spacing: 2px;
+    color:gray;
+}/*Como reacciona cuando esta el selector encima*/
