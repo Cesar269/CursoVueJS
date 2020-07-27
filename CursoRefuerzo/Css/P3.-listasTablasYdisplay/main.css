@@ -1,0 +1,73 @@
+body{
+    background-color: aliceblue;
+}
+ul{
+    list-style-type: none;
+    background-color: white;
+    border: solid 1px blue;
+    border-radius: 3px;
+    padding: 0px;
+
+}
+/*ul li{
+    list-style-type: upper-roman;
+}*/
+li{
+    border-bottom: solid 1px gray;
+    padding: 15px;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+tr:nth-child(even){/*tambien se puede usar odd*/
+    background-color: yellowgreen;
+}
+td{
+    border: 1px solid gray;
+    padding: 8px;
+}
+table th{
+    background-color: teal;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/*p{
+    display: inline;
+}*/
+#invisible{
+    display: none;
+}
+span{
+    display: block;
+}
+p.max{
+    max-width: 150px;
+    background-color: tomato;
+    margin: auto;
+    /*position: fixed; es muy usado para menus o cosas estaticas*/
+
+    
+}
+#over{
+ width: 100px;
+height: 100px;
+overflow-x: scroll;
+
+}
+img{
+    float: right;
+}
+img:hover{
+    opacity: 0.5;
+}
+div p{
+    color: red;
+}
