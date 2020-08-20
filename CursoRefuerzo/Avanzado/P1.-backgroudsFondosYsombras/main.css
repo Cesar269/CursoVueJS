@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(221, 213, 213);
+}
+
+.fondo{
+    background: rgb(147, 206, 147) url('https://placekitten.com/200/300') 
+    no-repeat right top fixed;
+
+    /*background-color: aquamarine;
+    background-image: url('https://placekitten.com/200/300');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed; en este orden se declara en
+    el background*/
+    background-size: inherit;
+
+   
+
+}
+/*
+También se vio el uso de hsl(noColor,porcentaje1
+,porcentaje2,opacidad); que puede sustituir al rgb
+*/
+
+.gradiente{
+    background-image: linear-gradient( to top right,white,
+    rgb(146, 138, 138));
+}
+/*linear-gradient(direccion,color1,color2)
+direccion tambien puede ser un angulo -90deg, -45deg y otros
+y entre color1 y color 2 podemos tener un color más.*/
+
+.box{
+    box-shadow: 2px 2px 13px rgb(128, 105, 105) inset;
+
+}
+.box2{
+    box-shadow: 2px 2px 13px rgb(128, 105, 105);
+}
+.text{
+    color: white;
+    text-shadow: 0px 1px 2px gray;
+}

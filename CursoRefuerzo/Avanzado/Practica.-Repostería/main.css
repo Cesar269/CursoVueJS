@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(226, 234, 241);
+}
+
+div{
+    background-color: white;
+    margin: 20px;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    height: 75px;
+    width: 450px;
+    position: relative;
+    padding: 25px 0px;
+    padding-bottom: 0px;
+    box-shadow: 2px 2px 4px rgb(138, 133, 133);
+    transition: 0.3s;
+} 
+.box-green{
+    border-left: solid 8px green;
+}
+.box-red{
+    border-left: solid 8px red;
+}
+.box-blue{
+    border-left: solid 8px blue;
+}
+.box-green:hover{
+    transform: scale(1.05);
+}
+.box-red:hover{
+    box-shadow: 4px 4px 8px rgb(138, 133, 133);
+}
+.box-blue:hover{
+    background-color: rgb(223, 223, 250);
+}

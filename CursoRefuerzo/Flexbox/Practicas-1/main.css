@@ -1,0 +1,27 @@
+body{
+    width: 200px;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
+    align-content: space-around;
+
+}
+.red{
+    background-color: red;
+}
+/*
+-------------Manipular orden de contenido--------------------
+se le asigna una clase a cada una y se manipula con "order". El
+valor por defecto es 0 y se ordenan de negativos a positivos
+pasando por 0.
+para cambiar el tamaño de cada uno y que se vaya acoplando cada
+uno al espacio que hay, se usa "flex-grow: ".
+flex-basis: no.px felx basis le da la distribucion y tamaño
+dependiendo el contenido. 
+align-self para solo acomodar y darle distribución a una sola
+casilla. 
+*/

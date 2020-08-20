@@ -1,0 +1,21 @@
+body{
+    background-color: aliceblue;
+}
+/*NOTA: la propiedad de transform solo se le aplican los que 
+que tienen la propiedad de display block*/
+.box{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px gray;
+    display: block;
+    transition: 0.4s,0.3s;
+    /*transition-delay: 0.3s;*/
+}
+.box:hover{
+    transform: scale(1.1,1.1);
+    background-color: rgb(230, 193, 193);
+}

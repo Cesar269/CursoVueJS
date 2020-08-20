@@ -1,0 +1,44 @@
+body{
+    background-color: azure;
+}
+.grid{
+    
+    display: grid;
+    grid-template-areas: "header header"
+                        "content sidebar"
+                        "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    /*si se siguen agregando cosas como celdas extra, estás no
+    están definidas arriba entonces debe haber algo que les
+    asigne espacio automaticamente*/
+    grid-auto-rows: 55px;
+    /*justify-items: stretch;
+    align-items: flex-end;*/
+}
+
+.red{
+    background-color: red;
+}
+/*.blue{
+    background-color: blue;
+}*/
+/*para darle alineación a una sola grilla
+.item-1{
+    justify-self: center;
+    align-self: center;
+}*/
+/*--------------------------------------------------------
+ALINEACION DE LA GRILLA COMPLETA
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(4, 50px);
+    grid-gap: 5px;
+    justify-content: <--- podemos alinear con center,end y otros
+    justify content: space-evenly ancho igual de los lados
+    los anteriores alinean en el eje horizontal
+    align-content: <--- aplica los mismos atributos que justify 
+    pero en vertical
+}
