@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{titulo}}</h1>
+
+
+        <ul>
+            <li v-for="fruta of frutas">{{fruta}}</li>
+        </ul>
+
+        <br><br><hr>
+
+        <p><b>Array de objetos </b></p>
+        <ul>
+            <li v-for="persona of personas">{{persona}}</li>
+        </ul>
+
+
+        <br><br><hr>
+
+        <p><b>for de componentes de un objeto y v-if</b></p>
+
+        <input type="text" v-model="nuevosDatos" @keyup.enter="agregarPersona">
+        <button v-on:click='agregarPersona'>Agregar Persona</button>
+        <ul>
+            <li v-for="persona of personas">
+                <input type="number" v-model.number="persona.edad">
+                {{persona.nombre}}
+
+                <span v-if="persona.edad<18">-Menor de edad</span>
+                <button @click="persona.edad +=1">+</button></li>
+        </ul>
+        <h4>Total = {{sumarEdades}}</h4>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js">
+    </script>
+
+</body>
+
+</html>
