@@ -1,4 +1,4 @@
-# pruebahastavtify
+# seccionvuetify
 
 ## Project setup
 ```
