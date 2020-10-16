@@ -1,14 +1,19 @@
 <template>
   <div>
-<h1>Este es el inicio</h1>
+    <v-main>
+         <presentation/>
+    </v-main>
+ 
+
   </div>
 </template>
 
 <script>
-
+import presentation from '@/components/presentation.vue'
 export default {
   name: 'Home',
   components: {
+    presentation,
  
   }
 }

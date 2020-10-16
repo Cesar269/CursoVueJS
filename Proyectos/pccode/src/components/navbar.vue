@@ -2,7 +2,7 @@
   <div>
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
-        <b-nav-item :to="{ name: 'Home.vue' }"
+        <b-nav-item :to="{ name: 'Home' }"
           ><b-icon icon="house"></b-icon> Inicio</b-nav-item
         >
       </b-navbar-nav>
@@ -15,5 +15,5 @@
         props:{
 
         }
-    }
+    };
 </script>
