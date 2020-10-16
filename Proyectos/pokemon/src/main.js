@@ -17,7 +17,30 @@ Vue.use(IconsPlugin)
 
 
 Vue.use(VueAxios, axios)
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+var firebaseConfig = {
+  apiKey: "AIzaSyDracIQUnUb9HhtHEXS8OJ4sxj1zroYnGI",
+  authDomain: "pokemon-e469d.firebaseapp.com",
+  databaseURL: "https://pokemon-e469d.firebaseio.com",
+  projectId: "pokemon-e469d",
+  storageBucket: "pokemon-e469d.appspot.com",
+  messagingSenderId: "343051478649",
+  appId: "1:343051478649:web:3b170b26d6c01860ae56a8"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+export const db = firebase.firestore();
+
+
+
 Vue.config.productionTip = false
+
+
+
+
+
+
 
 new Vue({
   router,

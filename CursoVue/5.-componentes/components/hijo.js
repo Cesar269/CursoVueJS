@@ -11,7 +11,7 @@ Vue.component('hijo', {
     props:['numero'],
     data() {
         return {
-            nombre: "Ignacio"
+            nombre: "Ignacio2"
         }
     },
     mounted() {

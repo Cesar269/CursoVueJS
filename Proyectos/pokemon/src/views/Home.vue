@@ -8,6 +8,7 @@
         <v-flex xs12 sm12 md6 lg4 xl4 v-for="(item,index) in pokemones" :key="index">
           <v-card class="mx-auto" max-width="400">
             <v-img
+             
               :src="item.imagen"
             >
             </v-img>
