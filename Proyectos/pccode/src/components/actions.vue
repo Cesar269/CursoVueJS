@@ -31,7 +31,5 @@ p {
   color: black;
   width: 21vw;
 }
-a{
 
-}
 </style>

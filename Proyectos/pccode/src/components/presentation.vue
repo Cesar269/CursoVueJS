@@ -1,6 +1,7 @@
 <template>
   <div>
-    <v-card class="mt-10">
+    <v-container>
+ <v-card class="mt-10">
       <div class="d-flex flex-row align-center">
         <img src="@/assets/avatar.jpg"  />
        <p>
@@ -18,6 +19,9 @@
 <actions/>
      </v-card-actions>
     </v-card>
+
+    </v-container>
+   
   </div>
 </template>
 
