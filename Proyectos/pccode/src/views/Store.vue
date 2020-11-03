@@ -1,12 +1,14 @@
 <template>
   <div>
-      <ul v-for="(item,index) in products" :key="index">
+      <ul v-for="(item,index) in pokemones" :key="index">
           <li>{{item.name}} --  {{item.url}}</li>
       </ul>
   </div>
 </template>
 
 <script>
+import {mapGetters, mapState} from 'vuex'
+import {mapActions} from 'vuex'
 export default {
   name: "Store",
   data() {
@@ -14,7 +16,7 @@ export default {
       }
   },
   created(){
-      this.llamar();
+      this.getPokemones();
 
   
     
@@ -22,14 +24,10 @@ export default {
 
   },
   computed:{
-    products(){
-        return this.$store.state.pokemons;
-    }
+      ...mapState('pokemones',['pokemones'])
   },
   methods:{
-      async llamar(){
-          await this.$store.dispatch('getProducts');
-      }
+      ...mapActions('pokemones',['getPokemones'])
       
   }
 };

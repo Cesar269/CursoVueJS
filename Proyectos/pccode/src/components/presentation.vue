@@ -1,9 +1,10 @@
 <template>
   <div>
     <v-container>
+      <div id="presentacion">
  <v-card class="mt-10">
       <div class="d-flex flex-row align-center">
-        <img src="@/assets/avatar.jpg"  />
+        <img class="avatar" src="@/assets/avatar.jpg"  />
        <p>
             <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit.
             Dolores molestias consequatur ab tempore repellat, asperiores
@@ -19,6 +20,9 @@
 <actions/>
      </v-card-actions>
     </v-card>
+
+
+      </div>
 
     </v-container>
    
@@ -38,7 +42,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,200&display=swap");
-img {
+.avatar{
   
   width: 40vw;
   border-radius: 50%;
@@ -47,11 +51,11 @@ img {
   box-shadow: 5px 5px 5px gray;
   transition: .8s;
 }
-img:hover {
+#presentacion img:hover {
   filter: opacity(0.8);
     box-shadow: 5px 5px 10px gray;
 }
-p {
+#presentacion p {
     width: 60vw;
   font-family: 'Piazzolla', serif;
   letter-spacing: 1px;
