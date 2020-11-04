@@ -20,7 +20,9 @@ export default {
         ...mapActions('cajita',['getCajita'])
     },
     created() {
-        this.getCajita();
+        if(!this.getLength){
+            this.getCajita();
+        }
     },
     computed:{
         ...mapGetters('cajita',['getLength','getCajitas']),
@@ -53,7 +55,6 @@ export default {
 }
 .cajita li:hover{
   background-color: rgba(48, 65, 121, 0.74);
-  cursor: pointer;
 }
 
 </style>
