@@ -19,7 +19,7 @@ const routes = [
     name: 'PokeStore',
     component: () => import(/* webpackChunkName: "about" */ '../views/PokeStore.vue')
   },{
-    path: '/Cajita_:3',
+    path: '/Cajita',
     name: 'Cajita',
     component: () => import(/* webpackChunkName: "about" */ '../views/Cajita.vue')
   },

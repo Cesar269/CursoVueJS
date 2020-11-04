@@ -15,7 +15,7 @@
         <b-nav-item :to="{ name: 'Cajita' }">
           <b-icon icon="box-seam"></b-icon> <v-badge
           color="green"
-          content="6"
+          :content="getLength"
         >
           Cajita
         </v-badge></b-nav-item
@@ -25,11 +25,14 @@
   </div>
 </template>
 <script>
+import {mapGetters} from 'vuex'
 export default {
   name: "navbar",
-  props: {
+  data: () => ({
 
-    
-  },
+  }),
+  computed:{
+...mapGetters('cajita',['getLength']),
+  }
 };
 </script>

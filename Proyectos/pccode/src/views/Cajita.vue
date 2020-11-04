@@ -1,11 +1,17 @@
 <template>
     <div>
-        <h1>Hola soy una cajita</h1>
+        <mostrarCajita/>
+        
     </div>
 </template>
 
 <script>
+import {db} from '../main'
+import mostrarCajita from '@/components/mostrarCajita.vue'
     export default{
-        name:'Cajita'
+        name:'Cajita',
+        components:{
+mostrarCajita
+        }
     }
 </script>

@@ -34,7 +34,7 @@ export default {
 }
 .lista li{
   list-style: none;
-  background-color: rgb(134, 131, 131);
+  background-color: rgb(83, 41, 107);
   color: white;
   text-align: center;
   text-decoration: wavy;
@@ -42,7 +42,7 @@ export default {
   width: 60vw;
   border-radius: 50px;
   font-size: 2.3vh;
-  box-shadow: 5px 5px 5px gray;
+  box-shadow: 5px 5px 5px rgb(161, 154, 154);
       font-family: 'Playfair Display', serif;
       transition: 0.5s;
 
@@ -50,7 +50,7 @@ export default {
 
 }
 .lista li:hover{
-  background-color: rgba(145, 140, 140, 0.74);
+  background-color: rgba(96, 50, 122, 0.89);
   cursor: pointer;
 }
 

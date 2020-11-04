@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <div id="botones">
-        <button>Almacenar</button>
+        <button @click="almacenar(getPokemon)">Almacenar</button>
         <img
           class="pokemon"
           :src="getPokemon.sprites.front_default"
@@ -117,11 +117,20 @@
 
 <script>
 import { mapGetters } from "vuex";
+import {mapActions} from 'vuex'
 export default {
   name: "infoPokemon",
   computed: {
     ...mapGetters("pokemon", ["getPokemon"]),
   },
+  methods:{
+    ...mapActions('cajita',['guardarCajita']),
+    almacenar(info){
+      if(info){
+        this.guardarCajita(info);
+      }
+    },
+  }
 };
 </script>
 

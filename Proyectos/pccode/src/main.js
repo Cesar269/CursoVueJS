@@ -8,6 +8,23 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 
 
+import firebase from 'firebase/app'
+import 'firebase/firestore'
+
+ var firebaseConfig = {
+  apiKey: "AIzaSyC0dbYydsIPYr1Ev4xY4_Z1O7VbFkZxL0U",
+  authDomain: "pccode-b3325.firebaseapp.com",
+  databaseURL: "https://pccode-b3325.firebaseio.com",
+  projectId: "pccode-b3325",
+  storageBucket: "pccode-b3325.appspot.com",
+  messagingSenderId: "46419336558",
+  appId: "1:46419336558:web:fc696c4dbaf44d1def757f"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+export const db = firebase.firestore();
+
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
