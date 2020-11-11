@@ -1,26 +1,28 @@
 <template>
     <div>
-        <p>Lista de cosas alv</p>
-        <ul>
-            <li>1 omomomo</li>
-            <li>2 omoom</li>
-            <li>3 ninnunuu</li>
-             <li>1 omomomo</li>
-            <li>2 omoom</li>
-            <li>3 ninnunuu</li>
-             <li>1 omomomo</li>
-            <li>2 omoom</li>
-            <li>3 ninnunuu</li>
-             <li>1 omomomo</li>
-            <li>2 omoom</li>
-            <li>3 ninnunuu</li>
+        <p>Tareas</p>
+        <ul v-for="(item,index) in getState" :key="index">
+            <li>{{item.apartado}}</li>
         </ul>
     </div>
 </template>
 
 <script>
+import { mapGetters,mapActions } from 'vuex'
+import db from '../main'
 export default {
     name:'Apartados',
+
+
+    computed:{
+        ...mapGetters('apartados',['getState']),
+    },
+    methods: {
+        ...mapActions('apartados',['getApartados'])
+    },
+    created(){
+        this.getApartados();
+    }
 
 }
 </script>

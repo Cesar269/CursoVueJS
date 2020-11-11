@@ -8,7 +8,7 @@
 <script>
 import Apartados from '../components/Apartados.vue'
 import Contenido from '../components/Contenido.vue'
-
+import {db} from '../main'
 export default {
   name: 'Home',
   components: {
@@ -19,7 +19,7 @@ export default {
 
 <style>
 .apartado{
-  background-color: rgb(221, 243, 231);
+  background-color: rgb(51, 228, 66);
   float: left;
   width: 225px;
   height: 100vh;
